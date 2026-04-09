@@ -776,18 +776,7 @@
         <h2 class="section-title">Compétitions et Activités</h2>
         <p class="section-description">Découvrez les différentes compétitions et activités proposées durant la LISI_Days1</p>
 
-        <!-- Style Toggle -->
-        <div style="display: flex; justify-content: center; margin-bottom: 30px; gap: 12px;">
-          <button onclick="setCompStyle('v1')" id="btn-v1" style="padding: 10px 24px; border-radius: 25px; border: 2px solid #ff6b6b; background: #ff6b6b; color: white; font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem; transition: all 0.3s;">
-            Style 1
-          </button>
-          <button onclick="setCompStyle('v2')" id="btn-v2" style="padding: 10px 24px; border-radius: 25px; border: 2px solid #ff6b6b; background: transparent; color: #ff6b6b; font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem; transition: all 0.3s;">
-            Style 2
-          </button>
-        </div>
-
-        <!-- V1: Original Grid -->
-        <div class="competitions-grid" id="comp-v1">
+        <div class="competitions-grid">
           <!-- Exposés Scientifiques -->
           <a href="competitions/exposes.html" class="competition-card">
             <div class="competition-icon">
@@ -824,77 +813,8 @@
             <p>Compétition pour élire le meilleur projet innovant.</p>
           </a>
         </div>
-
-        <!-- V2: Dark Gradient Cards -->
-        <div id="comp-v2" style="display: none; display: none; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
-
-          <a href="competitions/exposes.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #ff6b6b, #ee5a24); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Exposés scientifiques</h3>
-            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Concours de présentations des meilleurs doctorants.</p>
-            <span style="margin-top: 20px; font-size: 0.82rem; color: #ff6b6b; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="#" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #0f3460, #533483); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #a29bfe, #6c5ce7); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
-              <i class="fas fa-users"></i>
-            </div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Échange entre communauté</h3>
-            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Un espace pour interagir, échanger des idées et renforcer les liens scientifiques.</p>
-            <span style="margin-top: 20px; font-size: 0.82rem; color: #a29bfe; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="competitions/posters.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #134e5e, #71b280); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #00b894, #00cec9); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
-              <i class="fas fa-images"></i>
-            </div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Concours de posters</h3>
-            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Concours récompensant le meilleur poster scientifique.</p>
-            <span style="margin-top: 20px; font-size: 0.82rem; color: #55efc4; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="competitions/projets.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #2d1b5e, #b8410a); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #fdcb6e, #e17055); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Concours de projets</h3>
-            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Compétition pour élire le meilleur projet innovant.</p>
-            <span style="margin-top: 20px; font-size: 0.82rem; color: #fdcb6e; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-        </div>
       </div>
     </section>
-
-    <script>
-      function setCompStyle(v) {
-        var v1 = document.getElementById('comp-v1');
-        var v2 = document.getElementById('comp-v2');
-        var btnV1 = document.getElementById('btn-v1');
-        var btnV2 = document.getElementById('btn-v2');
-        if (v === 'v1') {
-          v1.style.display = 'grid';
-          v2.style.display = 'none';
-          btnV1.style.background = '#ff6b6b';
-          btnV1.style.color = 'white';
-          btnV2.style.background = 'transparent';
-          btnV2.style.color = '#ff6b6b';
-        } else {
-          v1.style.display = 'none';
-          v2.style.display = 'grid';
-          btnV2.style.background = '#ff6b6b';
-          btnV2.style.color = 'white';
-          btnV1.style.background = 'transparent';
-          btnV1.style.color = '#ff6b6b';
-        }
-        localStorage.setItem('compStyle', v);
-      }
-      // Restore saved style
-      var saved = localStorage.getItem('compStyle');
-      if (saved === 'v2') setCompStyle('v2');
-    </script>
 
     <!-- Section Comité -->
     <section class="comite" id="comite">
