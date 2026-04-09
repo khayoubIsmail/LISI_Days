@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-3JLZ805P6F');
@@ -12,11 +13,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="assets/images/icon.png">
-  <title>SEMET 27 - Semaine Étudiante FSSM</title>
-  
+  <title>LISI Days1 - Lab Event</title>
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/style_slider.css">
@@ -27,6 +28,8 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Theme V2 -->
+  <link rel="stylesheet" href="assets/css/theme-v2.css">
 </head>
 
 <body>
@@ -34,7 +37,7 @@
   <header class="header" data-header>
     <div class="container">
       <h1 class="logo">
-        <a href="#">SEMET'<span>27</span></a>
+        <a href="#">LISI Days'<span>1</span></a>
       </h1>
 
       <div class="menu-toggle" id="menuToggle">
@@ -48,8 +51,8 @@
           <li><a href="#home" class="navbar-link">Accueil</a></li>
           <li><a href="#about" class="navbar-link">À propos</a></li>
           <li><a href="#schedule" class="navbar-link">Programme</a></li>
-          <li><a href="#conferences" class="navbar-link">Conférences</a></li>
-          <li><a href="#workshops" class="navbar-link">Ateliers</a></li>
+          <li><a href="#conferences" class="navbar-link">Keynotes</a></li>
+          <li><a href="#workshops" class="navbar-link">Doctorants</a></li>
           <li><a href="#competitions" class="navbar-link">Compétitions</a></li>
           <li><a href="#comite" class="navbar-link">Comité</a></li>
           <li><a href="#contact" class="navbar-link">Contact</a></li>
@@ -63,15 +66,15 @@
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-content">
-          
+
           <div class="hero-text">
-            <h1 class="hero-title">SEMET'<span>27</span></h1>
+            <h1 class="hero-title">LISI Days'<span>1</span></h1>
             <div class="hero-subtitle">
-              <span class="highlight">Intelligence Artificielle et Innovation au service des Sciences et du Développement</span>
+              <span class="highlight">LISI days: Exploring Frontiers in Computer Science – 1st Edition</span>
             </div>
             <div class="hero-date">
               <ion-icon name="calendar-outline"></ion-icon>
-              23 - 26 Avril 2025
+              20 - 21 Avril 2026
             </div>
             <div class="hero-location">
               <ion-icon name="location-outline"></ion-icon>
@@ -79,9 +82,6 @@
             </div>
             <a href="#schedule" class="hero-cta">
               Découvrir le Programme
-            </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaRhn6T2GvyI2VXnC8FO3acX2nuSkXCMbUtzLuBNUsdfSvIA/viewform?usp=header" class="hero-cta participate-btn">
-              Participer
             </a>
           </div>
           <div class="hero-image">
@@ -92,7 +92,7 @@
             <button class="slider-arrow next" id="nextBtn">&#10095;</button>
             <div class="slider-controls" id="sliderDots"></div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -100,320 +100,672 @@
     <!-- Section À propos -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="section-title">À propos de SEMET 27</h2>
+        <h2 class="section-title">À propos de LISI_Days1</h2>
         <div class="about-content">
           <div class="about-images">
             <div class="image-grid">
-              <img src="assets/images/speaker/semaine1.png" alt="Étudiants travaillant sur des projets innovants" class="about-img">
+              <img src="assets/images/speaker/semaine1.png" alt="Étudiants travaillant sur des projets innovants"
+                class="about-img">
               <img src="assets/images/comite/semaine2.png" alt="Atelier d'intelligence artificielle" class="about-img">
               <img src="assets/images/comite/tarik.jpg" alt="Atelier d'intelligence artificielle" class="about-img">
             </div>
           </div>
           <div class="about-text">
-            <h3 class="about-subtitle">Une semaine dédiée à l'innovation et l'intelligence artificielle</h3>
+            <h3 class="about-subtitle">Une journée dédiée aux doctorats et aux projets pratiques du Master</h3>
             <p class="about-description">
-              La Semaine Culturelle et Scientifique de l'Étudiant SEMET 27 est un événement phare qui offre aux étudiants de la Faculté des Sciences Semlalia une plateforme unique pour explorer, apprendre et innover dans les domaines des technologies émergentes, de l'innovation et de l'intelligence artificielle.
+              Cette journée est dédiée à la présentation des avancées scientifiques des doctorants du laboratoire LISI.
+              En parallèle, cette journée offre une plateforme pour les étudiants de Master qui doivent participer avec
+              leurs projets pratiques novateurs et contribuer à l'écosystème scientifique du laboratoire.
             </p>
             <p class="about-description">
-              Cet événement permet aux étudiants de développer leurs compétences pratiques, de stimuler leur créativité et de participer à des projets concrets visant à résoudre des problèmes scientifiques et technologiques. La SEMET 27 est une occasion idéale pour les participants de découvrir des solutions innovantes et de se plonger dans des domaines variés, tout en interagissant avec des experts et en partageant des idées.
+              <strong>LISI en bref :</strong><br>
+              • 30 professeurs<br>
+              • 150 publications scientifiques dans des revues indexées Scopus et/ou Web of Science<br>
+              • 75 doctorants en cours<br>
+              • 7 soutenances en moyenne par an<br>
+              • 20 projets de recherche actifs<br>
+              • 10 collaborations internationales
             </p>
             <p class="about-description">
-              Cette 27eme édition sera marquée par l'hommage qui sera rendu à Mr Tarik Khalla chargé e la communication scientifique  et co-fondateur de la SEMET,  événement de la culture scientifique unique dans l'université Marocaine</p>
+              Le LISI est un laboratoire de recherche dynamique en informatique et systèmes intelligents, contribuant
+              activement à l'innovation scientifique et au rayonnement international.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
- <!-- Programme Section -->
- <section class="schedule" id="schedule">
-  <div class="container">
-    <h2 class="section-title">Programme</h2>
-    
-    <!-- Ajout du bouton de téléchargement -->
-    <div class="download-container" style="text-align: center; margin-bottom: 20px;">
-      <a href="./assets/pdf/programme_semet.pdf" download class="hero-cta" style="display: inline-block; background-color: #ff6b6b; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 600; margin: 0 auto;">
-        <i class="fas fa-download" style="margin-right: 8px;"></i> Télécharger le Programme
-      </a>
-    </div>
-    
-    <!-- Utilisation de la balise object pour afficher le PDF de manière responsive -->
-    <div class="schedule-container" style="width: 100%; height: 0; padding-bottom: 125%; position: relative;">
-      <object 
-        data="prog.html" 
-        style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: none; -webkit-overflow-scrolling: touch;">
-      </object>
-    </div> 
-  </div>
-</section>
-   
-    <!-- Section Conférences -->
+    <!-- Programme Section -->
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <h2 class="section-title">Programme</h2>
+
+        <!-- Ajout du bouton de téléchargement -->
+        <div class="download-container" style="text-align: center; margin-bottom: 20px;">
+          <a href="./assets/pdf/programme_semet.pdf" download class="hero-cta"
+            style="display: inline-block; background-color: #ff6b6b; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 600; margin: 0 auto;">
+            <i class="fas fa-download" style="margin-right: 8px;"></i> Télécharger le Programme
+          </a>
+        </div>
+
+        <!-- Utilisation de la balise object pour afficher le PDF de manière responsive -->
+        <div class="schedule-container" style="width: 100%; height: 0; padding-bottom: 125%; position: relative;">
+          <object data="prog.html"
+            style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: none; -webkit-overflow-scrolling: touch;">
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Keynotes -->
     <section class="speakers" id="conferences">
       <div class="container">
-        <h2 class="section-title">Conférences Plénières</h2>
-        <p class="section-description">Découvrez les intervenants et les thématiques des conférences de la SEMET'27</p>
-        
+        <h2 class="section-title">Keynotes</h2>
+        <p class="section-description">Découvrez les intervenants principaux et les thématiques des keynotes de la
+          LISI_Days1</p>
+
         <div class="speakers-grid">
-          <!-- Conférence 1 -->
-          
+          <!-- Keynote 1 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/speaker/abou kalam.png" alt="Prof Anas Abouelfakalem">
+              <img src="assets/images/comite/femme.png" alt="Pr. Marie BONNIN">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">IA et Citoyenneté Numérique : Construire une Société Innovante et Responsable</h3>
-              <p class="speaker-name">Prof Anas Abou elkalam</p>
+              <h3 class="speaker-talk-title">Evaluation de la protection juridique des océans à l'aide de l'IA : projet
+                NAWRAS</h3>
+              <p class="speaker-name">Pr. Marie BONNIN</p>
               <div class="speaker-details">
                 <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Mercredi 23 Avril, 11:00</span>
-              </div>
-            </div>
-          </div>
-          <!-- Conférence 2 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/saadoune.jpeg" alt="Prof Saadoune">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Les Batteries Lithium-Ion : De Leur Invention à Leur Rôle Clé dans la Transition Énergétique</h3>
-              <p class="speaker-name">Prof Ismael Saadoune</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Mercredi 23 Avril, 11:45</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Conférence 3 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/moulane.png" alt="Prof Moulane">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Astronomie et Intelligence Artificielle</h3>
-              <p class="speaker-name">Prof Youssef Moulane</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 9:30</span>
-              </div>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/elkattani.png" alt="Prof Moulane">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">AI4Good: Mettre l'IA au service de l'Humain et de la Société</h3>
-              <p class="speaker-name">Prof Nasser Kettani</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 10:15</span>
-              </div>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/Aroui.jpeg" alt="Prof Saadoune">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">L'IA va-t-elle remplacer l'art? </h3>
-              <p class="speaker-name">Prof Laroui Fouad</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11:00</span>
-              </div>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/comite/elmoudden.png" alt="Prof Saadoune">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Des algorithmes pour sauver les espèces : comment l'IA peut faire la différence?</h3>
-              <p class="speaker-name">Prof El Hassan El Mouden</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 9:30</span>
-              </div>
-            </div>
-          </div>
-          <!-- Conférence 4 -->
-          
-          <!-- Conférence 5 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/mohamed saad.png" alt="Prof Saad Mohamed">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Le Digital, de l'Efficience à l'Excellence</h3>
-              <p class="speaker-name">Prof Saad Mohamed</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 10:00</span>
+                <span><i class="fas fa-calendar-alt"></i> Mercredi 23 Avril, 09h40 - 10h25</span>
               </div>
             </div>
           </div>
 
+          <!-- Keynote 2 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/speaker/abou dia.png" alt="Prof Abou diae Taoufia">
+              <img src="assets/images/comite/homme.png" alt="El Hassan ABDELWAHED">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title"> L'Étudiant au centre des opportunités économiques : construire ensemble l'avenir de Marrakech-Safi</h3>
-              <p class="speaker-name">Prof Aboudia Taoufik</p>
+              <h3 class="speaker-talk-title">La transformation digitale dans l'industrie minière</h3>
+              <p class="speaker-name">El Hassan ABDELWAHED</p>
               <div class="speaker-details">
                 <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 10:45</span>
+                <span><i class="fas fa-calendar-alt"></i> Mercredi 23 Avril, 10h45 - 11h35</span>
               </div>
             </div>
           </div>
-          
-          <!-- Conférence 6 -->
-          
+
+          <!-- Keynote 3 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/speaker/jihad.jpeg" alt="Pr. Jihad ZAHIR">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Leveraging AI for Sustainable Marine Ecosystems</h3>
+              <p class="speaker-name">Pr. Jihad ZAHIR</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
+                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11h35 - 12h20</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keynote 4 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="Pr. Imad KISSAMI">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Calcul parallèle et HPC: Cas du cluster Toubkal</h3>
+              <p class="speaker-name">Pr. Imad KISSAMI</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Amphi X</span>
+                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 12h20 - 13h00</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Ateliers -->
+    <!-- Section Doctorants -->
     <section class="speakers" id="workshops">
       <div class="container">
-        <h2 class="section-title">Ateliers</h2>
-        <p class="section-description">Découvrez les ateliers pratiques proposés durant la SEMET'27</p>
-        
-        <div class="speakers-grid">
-          <!-- Atelier 1 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/comite/alaouitalibi.jpg" alt="Prof Elajaoui">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Méthodes avancées de modélisation mathématique</h3>
-              <p class="speaker-name">Prof Elalaoui Talibi Mohamed</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire mathématique</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11:45</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Atelier 2 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/comite/majdouline.jpg" alt="Prof El Modafar">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Comment la Cité de l'Innovation parvient-elle à révéler et à accompagner les innovateurs de demain?</h3>
-              <p class="speaker-name">Prof Majdouline Belaqziz</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Chimie</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11:45</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Atelier 4 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/mandi.jpeg" alt="Prof Laila Mandi">
-            </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Gestion du Stress Hydrique au Maroc : Vers des Solutions Durables
-              </h3>
-              <p class="speaker-name">Prof Laila Mandi</p>
-              <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Biologie</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11:45</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Atelier 5 -->
+        <h2 class="section-title">Doctorants</h2>
+        <p class="section-description">Découvrez les doctorants et leurs sujets de recherche présentés durant la
+          LISI_Days1</p>
 
+        <div class="speakers-grid">
+          <!-- Doctorant 1 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/comite/ilyas.jpeg" alt="Prof Art">
+              <img src="assets/images/comite/homme.png" alt="EL FAQAR Abdessabour Chakir">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">Les Ressources Minières Du MAROC</h3>
-              <p class="speaker-name">Prof ILYASS LERHRIS</p>
+              <h3 class="speaker-talk-title">Deep Learning in Material Design for Efficient Batteries</h3>
+              <p class="speaker-name">EL FAQAR Abdessabour Chakir</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Geologie</span>
-                <span><i class="fas fa-calendar-alt"></i> Jeudi 24 Avril, 11:45</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 14:15</span>
               </div>
             </div>
           </div>
-          <!-- Atelier 6 -->
+
+          <!-- Doctorant 2 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/speaker/chadi.jpg" alt="Prof Chadi">
+              <img src="assets/images/comite/femme.png" alt="MESSAOUDI Salma">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">Intelligence artificielle : de zéro à ChatGPT</h3>
-              <p class="speaker-name">Prof Chadi Mohamed-Amine</p>
+              <h3 class="speaker-talk-title">PINN-Based Digital Twin for Autonomous Vehicles with Sensor Integration and
+                Web Platform</h3>
+              <p class="speaker-name">MESSAOUDI Salma</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Extension</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 11:30</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 14:15</span>
               </div>
             </div>
           </div>
-          
-          <!-- Atelier 7 -->
+
+          <!-- Doctorant 3 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/speaker/elalaoui.jpeg" alt="Prof Jihad">
+              <img src="assets/images/comite/femme.png" alt="M'RHAR Kaoutar">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">Fondements de base de l'IA: comment tourner un petit système intelligent?</h3>
-              <p class="speaker-name">Prof EL ALAOUI HASNA</p>
+              <h3 class="speaker-talk-title">Deep learning and language models for anticancer drug design</h3>
+              <p class="speaker-name">M'RHAR Kaoutar</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Mathématique</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 11:30</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 14:40</span>
               </div>
             </div>
           </div>
-          
-          <!-- Atelier 8 -->
+
+          <!-- Doctorant 4 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/speaker/asmae.jpeg" alt="Prof Asmae Sbai">
+              <img src="assets/images/comite/femme.png" alt="JABIR Somaya">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">IA Au Service De La Médecine</h3>
-              <p class="speaker-name">Prof Asmae Sbai</p>
+              <h3 class="speaker-talk-title">Apports des méthodes de reconnaissance automatique du langage pour la
+                recherche de données...</h3>
+              <p class="speaker-name">JABIR Somaya</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Chimie</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 11:30</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 14:40</span>
               </div>
             </div>
           </div>
-          
-          <!-- Atelier 9 -->
+
+          <!-- Doctorant 5 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/comite/abdelmoula.png" alt="Prof IA Générative">
+              <img src="assets/images/comite/femme.png" alt="AIT MOHAMED Firdaous">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">Internet Des Objets</h3>
-              <p class="speaker-name">Prof Abouhilal Abdelmoula</p>
+              <h3 class="speaker-talk-title">Techniques d'acceleration des larges modeles</h3>
+              <p class="speaker-name">AIT MOHAMED Firdaous</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Biologie</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 11:30</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 15:05</span>
               </div>
             </div>
           </div>
+
+          <!-- Doctorant 6 -->
           <div class="speaker-card">
             <div class="speaker-image-circle">
-              <img src="assets/images/comite/Photo Nabou Abdellah.jpg" alt="Prof IA Générative">
+              <img src="assets/images/comite/homme.png" alt="MORAKIB Marouan">
             </div>
             <div class="speaker-info">
-              <h3 class="speaker-talk-title">Voice-Controlled LED System Using Raspberry Pi</h3>
-              <p class="speaker-name">Prof Nabou Abdellah</p>
+              <h3 class="speaker-talk-title">Développement d'un modèle hybride Deep Learning – RL pour le diagnostic
+                médical et la personnalisation des traitements</h3>
+              <p class="speaker-name">MORAKIB Marouan</p>
               <div class="speaker-details">
-                <span><i class="fas fa-map-marker-alt"></i> Salle Seminaire Physique</span>
-                <span><i class="fas fa-calendar-alt"></i> Vendredi 25 Avril, 11:30</span>
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 15:05</span>
               </div>
             </div>
           </div>
-          
+
+          <!-- Doctorant 7 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="KHAYOUB Ismail">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">LLM-Based Agents</h3>
+              <p class="speaker-name">KHAYOUB Ismail</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 15:30</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 8 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="TARGUOAUI Mouad">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Apprentissage automatique par renforcement hybridé appliqué à la
+                classification et l'optimisation intelligente des flux énergétiques</h3>
+              <p class="speaker-name">TARGUOAUI Mouad</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 15:30</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 9 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="ARSALANE Moad">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Artificial intelligence and agriculture</h3>
+              <p class="speaker-name">ARSALANE Moad</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 16:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 10 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="OUHMIDOU Hajar">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Deep learning and machine learning to avoid congestion in vehicle networks
+              </h3>
+              <p class="speaker-name">OUHMIDOU Hajar</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 16:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 11 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="MEKIANI Leila">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">LLM pour la conception de nouveaux médicaments : de la description de la
+                maladie à la molécule</h3>
+              <p class="speaker-name">MEKIANI Leila</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 16:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 12 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="OUBELOUAH Oumaima">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">AegisFlow</h3>
+              <p class="speaker-name">OUBELOUAH Oumaima</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 16:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 13 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="AIT HAMMOU Najia">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Application of Artificial Intelligence and Robotics in Agriculture</h3>
+              <p class="speaker-name">AIT HAMMOU Najia</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 17:15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 14 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="EL HABIB Oumaima">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Overview of intelligent systems for deepfake detection in social media
+                content</h3>
+              <p class="speaker-name">EL HABIB Oumaima</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 17:15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 15 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="FADILI Aymane">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Audio intelligence for local languages</h3>
+              <p class="speaker-name">FADILI Aymane</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 17:40</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 16 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="MALAINE Mariem">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Intégration des modèles d'IA et d'otolithes DEB pour une meilleure
+                estimation de l'âge et de la croissance des poissons</h3>
+              <p class="speaker-name">MALAINE Mariem</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Lundi 20 Avril, 17:40</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 17 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="FARAH Raja">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Identifying Influential Nodes in Complex Networks Using Machine Learning
+              </h3>
+              <p class="speaker-name">FARAH Raja</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 18 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="BABA Naima">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">SIGIRO: An information system for intelligent water resource management
+              </h3>
+              <p class="speaker-name">BABA Naima</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 19 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="CHATAOUI Nouhayla">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Reinforcement Learning for Stock Market Returns Forecasting using
+                Multi-Objective Optimization</h3>
+              <p class="speaker-name">CHATAOUI Nouhayla</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 20 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="RAFIQ Imane">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Système d'intelligence artificielle pour la surveillance, la prédiction et
+                l'aide à la décision utilisant l'analyse du Big Data...</h3>
+              <p class="speaker-name">RAFIQ Imane</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 21 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="AITIBOUREK Lahcen">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">TinyML-based for agricultural IoT devices</h3>
+              <p class="speaker-name">AITIBOUREK Lahcen</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 22 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="LECHHAB Hind">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Vers une approche d'analyse spatio-temporelle des comportements de conduite
+                à grande échelle basé sur l'IA</h3>
+              <p class="speaker-name">LECHHAB Hind</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 09:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 23 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="BOUDOUAR Youssef">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Deep multimodal learning and continuous learning for fault prognosis and
+                real-time supervision and monitoring of nuclear</h3>
+              <p class="speaker-name">BOUDOUAR Youssef</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 10:15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 24 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="KNIDIRI Dounia">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Smart-biochar</h3>
+              <p class="speaker-name">KNIDIRI Dounia</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 10:15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 25 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="ELMAJDOUBI Mousaab">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Market World Model</h3>
+              <p class="speaker-name">ELMAJDOUBI Mousaab</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 10:40</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 26 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="OUASSINE Younes">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Identification des coraux dans les collections d'images numériques...</h3>
+              <p class="speaker-name">OUASSINE Younes</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 11:35</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 27 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="LAZGHAM Loubna">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">L'intégration du blockchain et de l'IA dans le renforcement de la
+                cybersecurity dans les smart cities</h3>
+              <p class="speaker-name">LAZGHAM Loubna</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 11:35</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 28 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="LHASNAOUI Chaima">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Enabling Federated Learning On the Edge for Enhanced Privacy in Medical
+                Imaging</h3>
+              <p class="speaker-name">LHASNAOUI Chaima</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 29 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="AIT EZOUINE Elhoussine">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Traitement et indexation des vidéos à l'aide de l'IA</h3>
+              <p class="speaker-name">AIT EZOUINE Elhoussine</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 30 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="AL MOUATAMID Youssef">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Traitement automatisé de l'information juridique pour la protection de
+                l'environnement marin</h3>
+              <p class="speaker-name">AL MOUATAMID Youssef</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 31 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="ALHYANE Rachid">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Combinaison de modèles d'apprentissage profond pour la classification
+                multiclasse d'images médicales</h3>
+              <p class="speaker-name">ALHYANE Rachid</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 32 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/femme.png" alt="AIT BAALI Fatiha">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Federated Fine-Tuning of Large Language Models for Domain-Specific
+                Applications: Balancing Personalization and Privacy</h3>
+              <p class="speaker-name">AIT BAALI Fatiha</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 1</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 33 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="ELMANSOURI Abdelhalim">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Sentiment analysis within the Moroccan parliamentary context, specifically
+                focusing on questions directed by deputies to the government</h3>
+              <p class="speaker-name">ELMANSOURI Abdelhalim</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 12:50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctorant 34 -->
+          <div class="speaker-card">
+            <div class="speaker-image-circle">
+              <img src="assets/images/comite/homme.png" alt="LAFHAM Mohamed">
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-talk-title">Intelligent Tutoring System in Education 4.0</h3>
+              <p class="speaker-name">LAFHAM Mohamed</p>
+              <div class="speaker-details">
+                <span><i class="fas fa-map-marker-alt"></i> Salle Séminaire 2</span>
+                <span><i class="fas fa-calendar-alt"></i> Mardi 21 Avril, 13:15</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -422,99 +774,134 @@
     <section class="competitions" id="competitions">
       <div class="container">
         <h2 class="section-title">Compétitions et Activités</h2>
-        <p class="section-description">Découvrez les différentes compétitions et activités proposées durant la SEMET'27</p>
-        
-        <div class="competitions-grid">
-          <!-- Tournoi d'échecs -->
-          <a href="competitions/echecs.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-chess"></i>
-            </div>
-            <h3>Tournoi d'échecs</h3>
-            <p>Affrontez les meilleurs joueurs d'échecs de la faculté dans un tournoi passionnant.</p>
-          </a>
-          
-          <!-- Mini-foot -->
-          <a href="competitions/mini-foot.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-futbol"></i>
-            </div>
-            <h3>Mini-foot</h3>
-            <p>Participez au tournoi de mini-foot et représentez votre filière dans une ambiance sportive.</p>
-          </a>
-          
-          <!-- Hackathon -->
-          <a href="competitions/hackathon.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3>Hackathon d'innovation</h3>
-            <p>Développez des solutions innovantes en équipe pour résoudre des problèmes scientifiques concrets.</p>
-          </a>
-          
-          <!-- Public Speaking -->
-          <a href="competitions/public-speaking.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-microphone-alt"></i>
-            </div>
-            <h3>Public Speaking</h3>
-            <p>Présentez un discours sur un thème scientifique et développez vos compétences en communication.</p>
-          </a>
-          
-          <!-- Journalisme Scientifique -->
-          <a href="competitions/journalisme.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-newspaper"></i>
-            </div>
-            <h3>Journalisme Scientifique</h3>
-            <p>Rédigez des articles de vulgarisation scientifique sur les dernières avancées dans votre domaine.</p>
-          </a>
-          
+        <p class="section-description">Découvrez les différentes compétitions et activités proposées durant la LISI_Days1</p>
+
+        <!-- Style Toggle -->
+        <div style="display: flex; justify-content: center; margin-bottom: 30px; gap: 12px;">
+          <button onclick="setCompStyle('v1')" id="btn-v1" style="padding: 10px 24px; border-radius: 25px; border: 2px solid #ff6b6b; background: #ff6b6b; color: white; font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem; transition: all 0.3s;">
+            Style 1
+          </button>
+          <button onclick="setCompStyle('v2')" id="btn-v2" style="padding: 10px 24px; border-radius: 25px; border: 2px solid #ff6b6b; background: transparent; color: #ff6b6b; font-weight: 600; cursor: pointer; font-family: inherit; font-size: 0.9rem; transition: all 0.3s;">
+            Style 2
+          </button>
+        </div>
+
+        <!-- V1: Original Grid -->
+        <div class="competitions-grid" id="comp-v1">
           <!-- Exposés Scientifiques -->
           <a href="competitions/exposes.html" class="competition-card">
             <div class="competition-icon">
               <i class="fas fa-chalkboard-teacher"></i>
             </div>
-            <h3>Exposés Scientifiques</h3>
-            <p>Présentez vos travaux de recherche et partagez vos connaissances avec la communauté académique.</p>
+            <h3>Exposés scientifiques</h3>
+            <p>Concours de présentations des meilleurs doctorants.</p>
           </a>
-          
-          <!-- Mon Master -->
-          <a href="competitions/mon-master.html" class="competition-card">
+
+          <!-- Échange entre communauté -->
+          <a href="#" class="competition-card">
             <div class="competition-icon">
-              <i class="fas fa-school"></i>
+              <i class="fas fa-users"></i>
             </div>
-            <h3>Mon Master</h3>
-            <p>Présentez votre parcours de Master et inspirez les étudiants de licence à poursuivre leurs études.</p>
+            <h3>Échange entre communauté</h3>
+            <p>Un espace pour interagir, échanger des idées et renforcer les liens au sein de la communauté scientifique.</p>
           </a>
-          
-          <!-- Mon Labo -->
-          <a href="competitions/mon-labo.html" class="competition-card">
-            <div class="competition-icon">
-              <i class="fas fa-flask"></i>
-            </div>
-            <h3>Mon Labo</h3>
-            <p>Faites découvrir votre laboratoire de recherche et les projets sur lesquels vous travaillez.</p>
-          </a>
-          
+
           <!-- Concours de Posters -->
           <a href="competitions/posters.html" class="competition-card">
             <div class="competition-icon">
               <i class="fas fa-images"></i>
             </div>
-            <h3>Concours de Posters</h3>
-            <p>Créez un poster scientifique présentant vos recherches ou un sujet d'actualité dans votre domaine.</p>
+            <h3>Concours de posters</h3>
+            <p>Concours récompensant le meilleur poster scientifique.</p>
           </a>
+
+          <!-- Concours de Projets -->
+          <a href="competitions/projets.html" class="competition-card">
+            <div class="competition-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Concours de projets</h3>
+            <p>Compétition pour élire le meilleur projet innovant.</p>
+          </a>
+        </div>
+
+        <!-- V2: Dark Gradient Cards -->
+        <div id="comp-v2" style="display: none; display: none; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+
+          <a href="competitions/exposes.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #ff6b6b, #ee5a24); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Exposés scientifiques</h3>
+            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Concours de présentations des meilleurs doctorants.</p>
+            <span style="margin-top: 20px; font-size: 0.82rem; color: #ff6b6b; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #0f3460, #533483); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #a29bfe, #6c5ce7); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Échange entre communauté</h3>
+            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Un espace pour interagir, échanger des idées et renforcer les liens scientifiques.</p>
+            <span style="margin-top: 20px; font-size: 0.82rem; color: #a29bfe; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="competitions/posters.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #134e5e, #71b280); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #00b894, #00cec9); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
+              <i class="fas fa-images"></i>
+            </div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Concours de posters</h3>
+            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Concours récompensant le meilleur poster scientifique.</p>
+            <span style="margin-top: 20px; font-size: 0.82rem; color: #55efc4; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="competitions/projets.html" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(135deg, #2d1b5e, #b8410a); color: white; border-radius: 18px; padding: 32px 28px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #fdcb6e, #e17055); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.5rem; color: white;">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: white;">Concours de projets</h3>
+            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.6; flex-grow: 1;">Compétition pour élire le meilleur projet innovant.</p>
+            <span style="margin-top: 20px; font-size: 0.82rem; color: #fdcb6e; font-weight: 600; display: flex; align-items: center; gap: 6px;">Voir plus <i class="fas fa-arrow-right"></i></span>
+          </a>
+
         </div>
       </div>
     </section>
-    
+
+    <script>
+      function setCompStyle(v) {
+        var v1 = document.getElementById('comp-v1');
+        var v2 = document.getElementById('comp-v2');
+        var btnV1 = document.getElementById('btn-v1');
+        var btnV2 = document.getElementById('btn-v2');
+        if (v === 'v1') {
+          v1.style.display = 'grid';
+          v2.style.display = 'none';
+          btnV1.style.background = '#ff6b6b';
+          btnV1.style.color = 'white';
+          btnV2.style.background = 'transparent';
+          btnV2.style.color = '#ff6b6b';
+        } else {
+          v1.style.display = 'none';
+          v2.style.display = 'grid';
+          btnV2.style.background = '#ff6b6b';
+          btnV2.style.color = 'white';
+          btnV1.style.background = 'transparent';
+          btnV1.style.color = '#ff6b6b';
+        }
+        localStorage.setItem('compStyle', v);
+      }
+      // Restore saved style
+      var saved = localStorage.getItem('compStyle');
+      if (saved === 'v2') setCompStyle('v2');
+    </script>
+
     <!-- Section Comité -->
     <section class="comite" id="comite">
       <div class="container">
         <h2 class="section-title">Comité</h2>
-        <p class="section-description">Les personnes qui contribuent à la réussite de la SEMET'27</p>
-        
+        <p class="section-description">Les personnes qui contribuent à la réussite de la LISI_Days1</p>
+
         <!-- Comité Général -->
         <div class="comite-section">
           <h3 class="comite-title">Comité Général</h3>
@@ -524,69 +911,28 @@
                 <img src="assets/images/comite/elmoudden.png" alt="Doyen FSSM">
               </div>
               <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">El Hassan El Mouden</h4>
+                <h4 class="comite-name" style="color: #ff6b6b;">El Hassan El Moudden</h4>
                 <p class="comite-role" style="color: #1a5f7a;">Doyen de la FSSM</p>
               </div>
             </div>
-            
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/hajar.jpg" alt="Vice-Doyen">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Mousannif Hajar</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Coordinatrice de la SEMET'27</p>
-              </div>
-            </div>
-            
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/speaker/tarik.jpeg" alt="Vice-Doyen">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Tarik Khalla</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Chef de Communication à la FSSM</p>
-              </div>
-            </div>
 
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/ouazani.jpeg" alt="Doyen FSSM">
+                <img src="assets/images/comite/homme.png" alt="Essaid El Bachari">
               </div>
               <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Naaila OUAZZANI</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Vice Doyen à la FSSM</p>
+                <h4 class="comite-name" style="color: #ff6b6b;">Essaid El Bachari</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Prof and Director labo LISI</p>
               </div>
             </div>
-            
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/adahchour.jpg" alt="Doyen FSSM">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Abderrahim Adahchour</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Vice Doyen à la FSSM</p>
-              </div>
-            </div>
-            
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/bouziane.jpg" alt="Doyen FSSM">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Driss Bouziane</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Vice Doyen à la FSSM</p>
-              </div>
-            </div>
-            
           </div>
         </div>
-        
-        <!-- Comité de Programme -->
+
+        <!-- Comité d'Organisation et de Programme -->
         <div class="comite-section">
-          <h3 class="comite-title">Comité de Programme</h3>
-          <div class="comite-grid" >
+          <h3 class="comite-title">Comité d'Organisation et de Programme</h3>
+          <div class="comite-grid">
+
             <div class="comite-card">
               <div class="comite-image-circle">
                 <img src="assets/images/speaker/chadi.jpg" alt="Professeur">
@@ -596,7 +942,7 @@
                 <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
               </div>
             </div>
-            
+
             <div class="comite-card">
               <div class="comite-image-circle">
                 <img src="assets/images/speaker/ameksa.jpg" alt="Professeur">
@@ -606,316 +952,244 @@
                 <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
               </div>
             </div>
-            
-            
-            
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Enseignant">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Ikdid Abdelouafi</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/femme.png" alt="Doctorante">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">AIT BAALI Fatiha</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Doctorante</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Doctorant">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">ISmail KHAYOUB</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Doctorant</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/femme.png" alt="Doctorante">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Firdaous ait mohammed</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Doctorante</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Doctorant">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">aymane fadili</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Doctorant</p>
+              </div>
+            </div>
+
           </div>
         </div>
-        
-        <!-- Comité d'Organisation -->
+
+        <!-- Comité d'évaluation : Master/poster -->
         <div class="comite-section">
-          <h3 class="comite-title">Comité d'Organisation</h3>
+          <h3 class="comite-title">Comité d'évaluation : Master/poster</h3>
           <div class="comite-grid">
-
-            <!-- Enseignants -->
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/ghamizi.jpeg" alt="Enseignant">
+                <img src="assets/images/comite/homme.png" alt="Pr. Ikdid Abdelouafi">
               </div>
               <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Ghamizi Mohamed</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/Myahmed.jpg" alt="Professeur">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">My Ahmed El Kiram</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/abdelmoula.png" alt="Professeur">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Abouhilal Abdelmoula</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/ammor.webp" alt="Professeur">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Soumia Ammor</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/chraibi.webp" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Abdelali Chraibi</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/afoudi.jpg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Afoudi Yassine</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/warda elmoume .jpg" alt="Enseignante">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Warda El Moume</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/sedki.jpeg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name"style="color: #ff6b6b;">Sedki Az-eddine</h4>
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Ikdid Abdelouafi</h4>
                 <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
               </div>
             </div>
 
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/raouj.png" alt="Enseignant">
+                <img src="assets/images/comite/afoudi.jpg" alt="Pr. Afoudi Yassine">
               </div>
               <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Abdelaziz Raouj</h4>
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Afoudi Yassine</h4>
                 <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/laouane .png" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Hassan LAOUANE</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/targhi.png" alt="Enseignante">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Soukaina Targhi</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/ounzar.jpg" alt="Enseignante">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Bouchra Ouenzar</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/femme.png" alt="Enseignante">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Ramzi Zahra</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/mghazli.jpg" alt="Enseignante">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Mghazli Souad</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/benkhaldoun.jpeg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Benkhaldoun Zouhair</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/Bouchra atcha.jpeg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Bouchra Atcha</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/derit.jpg" alt="Doctorant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Mourad GHACHOUI</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/kassam.jpg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Majdouline KASSAM</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/hdoufane.png" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Ismail Hdoufane</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/rachid.jpg" alt="Enseignant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Rachid Idouhli</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/Mourad-Ouhammou-3.png" alt="Doctorant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Mourad Ouhammou</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/zakir.jpeg" alt="Doctorant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Zakir Othmane</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Docteur à la FSSM</p>
-              </div>
-            </div>
-
-            <div style="width: 100%; height: 80px;"></div>
-
-            <!-- Étudiants -->
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/adil.jpg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Adil LAFRAOUAT</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/elaissaoui.jpg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Abdessamad Elaissaoui</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/bayane.jpg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Bayane Khoubane</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiante à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/ouahman.jpeg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">YASSINE OUAHMANE</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiant à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/tabit.jpeg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Tabit Hind</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiante à la FSSM</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/yassine.jpg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">ENNHILI Yassine</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiant à la FSSM</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/ayoub_sport.jpg" alt="Étudiant">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Kassimi ayyoub</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Étudiant à la FSSM</p>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Comité Responsable des Étudiants -->
+
+        <!-- Comité d'évaluation des présentations (PhD) -->
         <div class="comite-section">
-          <h3 class="comite-title">Comité Responsable des Étudiants</h3>
+          <h3 class="comite-title">Comité d'évaluation des présentations (PhD)</h3>
           <div class="comite-grid">
+
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/eves.jpg" alt="Club Environnement">
+                <img src="assets/images/comite/homme.png" alt="Pr. Elouarak">
               </div>
               <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">EVES</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club d'Environnement</p>
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Elouarak</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
               </div>
             </div>
 
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/chessclubfssm.jpg" alt="Club Échecs">
+                <img src="assets/images/speaker/chadi.jpg" alt="Pr. Chadi">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Chadi</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Aznague">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Aznague</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Fahd">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Fahd</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/femme.png" alt="Pr. Latifa">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Latifa</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/maria.jpeg" alt="Pr. Maria">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Maria</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Hadni">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Hadni</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Elbachari">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Elbachari</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Elkiram">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Elkiram</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Abdelouahed">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Abdelouahed</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/femme.png" alt="Pr. Hasna">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Hasna</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignante à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Ilyas">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Ilyas</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/homme.png" alt="Pr. Mustapha">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">Pr. Mustapha</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Enseignant à la FSSM</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!-- Clubs partners -->
+        <div class="comite-section">
+          <h3 class="comite-title">Clubs partners</h3>
+          <div class="comite-grid">
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/itclub.png" alt="IT Club">
+              </div>
+              <div class="comite-info">
+                <h4 class="comite-name" style="color: #ff6b6b;">IT Club</h4>
+                <p class="comite-role" style="color: #1a5f7a;">Club Informatique</p>
+              </div>
+            </div>
+
+            <div class="comite-card">
+              <div class="comite-image-circle">
+                <img src="assets/images/comite/chessclubfssm.jpg" alt="Chess Club FSSM">
               </div>
               <div class="comite-info">
                 <h4 class="comite-name" style="color: #ff6b6b;">Chess Club FSSM</h4>
@@ -925,142 +1199,55 @@
 
             <div class="comite-card">
               <div class="comite-image-circle">
-                <img src="assets/images/comite/hultprize.jpg" alt="Club Entrepreneuriat">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Hult Prize</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club d'Entrepreneuriat</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/enactus.jpg" alt="Club Entrepreneuriat Social">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Enactus FSSM</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club d'Entrepreneuriat Social</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/vitalis.jpg" alt="Club Santé">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Vitalis</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club Santé</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/itclub.png" alt="Club Informatique">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">IT Club</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club Informatique</p>
-              </div>
-            </div>
-
-            
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/chorale.jpg" alt="Club Chorale">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Chorale FSSM</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club de Chorale et Musique</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/hepac.jpg" alt="Club Astronomie">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">HEPAC</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club d'Astronomie</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/sport.jpg" alt="Club Sport">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Sport Club FSSM</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club de Sport</p>
-              </div>
-            </div>
-
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/theatre.png" alt="Club Théâtre">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Empreinte</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club Théâtre</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/soutien.jpg" alt="Club Théâtre">
-              </div>
-              <div class="comite-info">
-                <h4 class="comite-name" style="color: #ff6b6b;">Students Support</h4>
-                <p class="comite-role" style="color: #1a5f7a;">Club Soutien</p>
-              </div>
-            </div>
-            <div class="comite-card">
-              <div class="comite-image-circle">
-                <img src="assets/images/comite/raic.jpg" alt="Club Robotique">
+                <img src="assets/images/comite/raic.jpg" alt="RAIC">
               </div>
               <div class="comite-info">
                 <h4 class="comite-name" style="color: #ff6b6b;">RAIC</h4>
                 <p class="comite-role" style="color: #1a5f7a;">Club de Robotique<br>et Intelligence Artificielle</p>
               </div>
             </div>
+
           </div>
         </div>
+
+
       </div>
     </section>
-    
+
     <section class="contact" id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-        <p class="section-description">Pour toute question, veuillez contacter nos responsables :</p>
-        
-        <div class="contact-grid">
-          <!-- Card for Hajar Mousannif -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/comite/hajar.jpg" alt="Prof Laila Mandi">
+        <p class="section-description">Pour toute question, veuillez nous envoyer un message via ce formulaire :</p>
+
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+          <form action="mailto:admin@lisi.com" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-name" style="font-weight: 600; color: #1a5f7a; font-size: 0.95rem;">Nom complet</label>
+              <input type="text" id="contact-name" name="Nom" required placeholder="Votre nom..." style="padding: 14px; border: 1.5px solid #eaeaea; border-radius: 8px; font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#ff6b6b'" onblur="this.style.borderColor='#eaeaea'">
             </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Mousannif Hajar</h3>
-              <p class="speaker-name"> Coordinatrice de la semet27</p>
-              <div class="speaker-details">
-                <span><i class="mailto"></i>Mousannif@uca.ac.ma</span>
-              </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-email" style="font-weight: 600; color: #1a5f7a; font-size: 0.95rem;">Email</label>
+              <input type="email" id="contact-email" name="Email" required placeholder="votre@email.com" style="padding: 14px; border: 1.5px solid #eaeaea; border-radius: 8px; font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#ff6b6b'" onblur="this.style.borderColor='#eaeaea'">
             </div>
-          </div>
-          
-          <!-- Atelier 5 -->
-          <div class="speaker-card">
-            <div class="speaker-image-circle">
-              <img src="assets/images/speaker/tarik.jpeg" alt="Prof Art">
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-subject" style="font-weight: 600; color: #1a5f7a; font-size: 0.95rem;">Sujet</label>
+              <input type="text" id="contact-subject" name="Sujet" required placeholder="Raison de votre message..." style="padding: 14px; border: 1.5px solid #eaeaea; border-radius: 8px; font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#ff6b6b'" onblur="this.style.borderColor='#eaeaea'">
             </div>
-            <div class="speaker-info">
-              <h3 class="speaker-talk-title">Khalla Tarik</h3>
-              <p class="speaker-name">Chef de Communication a La FSSM </p>
-              <div class="speaker-details">
-                <span><i class="mailto"></i> Khalla@uca.ac.ma</span>
-              </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-message" style="font-weight: 600; color: #1a5f7a; font-size: 0.95rem;">Message</label>
+              <textarea id="contact-message" name="Message" rows="5" required placeholder="Écrivez votre message ici..." style="padding: 14px; border: 1.5px solid #eaeaea; border-radius: 8px; font-family: inherit; font-size: 1rem; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#ff6b6b'" onblur="this.style.borderColor='#eaeaea'"></textarea>
             </div>
-          </div>
+
+            <button type="submit" style="background-color: #ff6b6b; color: white; padding: 16px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; font-family: inherit; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 10px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(255,107,107,0.35)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+          </form>
         </div>
+
       </div>
     </section>
   </main>
@@ -1070,17 +1257,46 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle-btn" onclick="toggleTheme()" title="Changer de thème">
+    <i class="fas fa-palette" id="theme-icon"></i>
+  </button>
+
+  <script>
+    function toggleTheme() {
+      var body = document.body;
+      var icon = document.getElementById('theme-icon');
+      if (body.classList.contains('theme-v2')) {
+        body.classList.remove('theme-v2');
+        icon.className = 'fas fa-palette';
+        localStorage.setItem('siteTheme', 'v1');
+      } else {
+        body.classList.add('theme-v2');
+        icon.className = 'fas fa-sun';
+        localStorage.setItem('siteTheme', 'v2');
+      }
+    }
+    // Restore saved theme on load
+    (function() {
+      if (localStorage.getItem('siteTheme') === 'v2') {
+        document.body.classList.add('theme-v2');
+        var icon = document.getElementById('theme-icon');
+        if (icon) icon.className = 'fas fa-sun';
+      }
+    })();
+  </script>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
           <h1 class="logo">
-            <a href="#">SEMET'<span>27</span></a>
+            <a href="#">LISI_Days'<span>1</span></a>
           </h1>
         </div>
         <div class="footer-right">
-          <p>&copy; 2025 SEMET'27. Tous droits réservés.</p>
+          <p>&copy; 2026 LISI_Days1. Tous droits réservés.</p>
         </div>
       </div>
     </div>
@@ -1096,10 +1312,12 @@
       .hide-on-mobile {
         display: block !important;
       }
+
       .mobile-schedule-container {
         display: none;
       }
     }
   </style>
 </body>
+
 </html>

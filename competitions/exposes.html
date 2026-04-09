@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-3JLZ805P6F');
@@ -12,11 +13,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../assets/images/icon.png">
-  <title>Exposés Scientifiques - SEMET 27</title>
-  
+  <title>Exposés Scientifiques - LISI Days'1</title>
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/style_slider.css">
@@ -27,7 +28,7 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <style>
     /* Styles pour le fil d'Ariane (breadcrumb) */
     .breadcrumb {
@@ -35,61 +36,61 @@
       padding: 15px 0;
       margin-top: 80px;
     }
-    
+
     .breadcrumb-container {
       max-width: var(--container-width);
       margin: 0 auto;
       padding: 0 20px;
     }
-    
+
     .breadcrumb-list {
       display: flex;
       align-items: center;
       list-style: none;
     }
-    
+
     .breadcrumb-item {
       display: flex;
       align-items: center;
       font-size: 0.9rem;
     }
-    
+
     .breadcrumb-item a {
       color: var(--primary-color);
       text-decoration: none;
       transition: var(--transition);
     }
-    
+
     .breadcrumb-item a:hover {
       color: var(--secondary-color);
     }
-    
+
     .breadcrumb-item.active {
       color: var(--text-color);
       font-weight: 500;
     }
-    
+
     .breadcrumb-separator {
       margin: 0 10px;
       color: #999;
     }
-    
+
     /* Styles pour la page de détail de compétition */
     .competition-detail {
       padding: 60px 0;
     }
-    
+
     .detail-header {
       text-align: center;
       margin-bottom: 40px;
     }
-    
+
     .competition-icon-large {
       font-size: 5rem;
       color: var(--primary-color);
       margin-bottom: 20px;
     }
-    
+
     .detail-content {
       max-width: 800px;
       margin: 0 auto;
@@ -98,37 +99,37 @@
       border-radius: 15px;
       box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
     }
-    
+
     .detail-section {
       margin-bottom: 30px;
     }
-    
+
     .detail-section h3 {
       color: var(--primary-color);
       margin-bottom: 15px;
       padding-bottom: 10px;
       border-bottom: 2px solid #eee;
     }
-    
+
     .detail-section p {
       margin-bottom: 15px;
       line-height: 1.7;
     }
-    
+
     .detail-section ul {
       margin-bottom: 15px;
       padding-left: 20px;
     }
-    
+
     .detail-section li {
       margin-bottom: 10px;
     }
-    
+
     .detail-cta {
       text-align: center;
       margin-top: 30px;
     }
-    
+
     .register-btn {
       display: inline-flex;
       align-items: center;
@@ -142,7 +143,7 @@
       font-weight: 500;
       transition: all 0.3s ease;
     }
-    
+
     .register-btn:hover {
       background: var(--secondary-color);
       transform: translateY(-3px);
@@ -153,77 +154,92 @@
       padding: 80px 0;
       background-color: var(--light-gray);
     }
+
     .tournament-details {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       background: white;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
+
     .tournament-header {
       text-align: center;
       margin-bottom: 40px;
     }
+
     .tournament-header h1 {
       color: var(--primary-color);
       font-size: 2.5rem;
       margin-bottom: 15px;
     }
+
     .info-block {
       margin-bottom: 30px;
       padding: 20px;
       background: #f8f9fa;
       border-radius: 8px;
     }
+
     .info-block h2 {
       color: var(--secondary-color);
       margin-bottom: 15px;
       font-size: 1.5rem;
     }
+
     .info-block ul {
       list-style-type: none;
       padding-left: 20px;
     }
+
     .info-block ul li {
       margin-bottom: 10px;
       position: relative;
     }
+
     .info-block ul li:before {
       content: "♟";
       position: absolute;
       left: -20px;
       color: var(--primary-color);
     }
+
     .prize-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
+
     .prize-card {
       text-align: center;
       padding: 20px;
       background: linear-gradient(145deg, #ffffff, #f0f0f0);
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
+
     .prize-card h3 {
       color: var(--primary-color);
       margin-bottom: 10px;
     }
+
     .prize-card.gold {
       background: linear-gradient(145deg, #ffd700, #ffc800);
       color: #000;
     }
+
     .prize-card.silver {
       background: linear-gradient(145deg, #c0c0c0, #b0b0b0);
       color: #000;
     }
+
     .prize-card.bronze {
       background: linear-gradient(145deg, #cd7f32, #bd6f22);
       color: #fff;
     }
+
     .registration-btn {
       display: inline-block;
       padding: 15px 30px;
@@ -234,6 +250,7 @@
       margin-top: 20px;
       transition: all 0.3s ease;
     }
+
     .registration-btn:hover {
       background-color: var(--secondary-color);
       transform: translateY(-2px);
@@ -246,7 +263,7 @@
   <header class="header" data-header>
     <div class="container">
       <h1 class="logo">
-        <a href="../index.html">SEMET<span>27</span></a>
+        <a href="../index.html">LISI Days'<span>1</span></a>
       </h1>
 
       <nav class="navbar" data-navbar>
@@ -289,8 +306,10 @@
             <div class="competition-icon-large">
               <i class="fas fa-chalkboard-teacher" style="font-size: 8rem; color: #1a5f7a;"></i>
             </div>
-            <h2 class="section-title" style="color: #1a5f7a; font-size: 2.5rem; margin-top: 20px;">Exposés Scientifiques</h2>
-            <p style="color: #666; font-size: 1.2rem; margin-top: 10px;">Partagez vos recherches sur l'innovation et l'IA</p>
+            <h2 class="section-title" style="color: #1a5f7a; font-size: 2.5rem; margin-top: 20px;">Exposés Scientifiques
+            </h2>
+            <p style="color: #666; font-size: 1.2rem; margin-top: 10px;">Partagez vos recherches sur l'innovation et
+              l'IA</p>
           </div>
           <div class="info-block">
             <h2>Format du Concours</h2>
@@ -298,7 +317,7 @@
               <li>Présentation orale de 15 minutes sur un sujet lié à l'IA et l'innovation</li>
               <li>Support visuel (PowerPoint ou équivalent) autorisé</li>
               <li>Session de questions-réponses de 5 minutes</li>
-              <li>Participation individuelle ou en binôme</li>
+              <li>Participation individuelle</li>
             </ul>
           </div>
 
@@ -314,40 +333,18 @@
             </ul>
           </div>
 
-          <div class="info-block">
-            <h2>Consignes de Présentation</h2>
-            <ul>
-              <li>Durée : 15 minutes de présentation + 5 minutes de questions</li>
-              <li>Support visuel : Maximum 15 diapositives</li>
-              <li>Langue : Français ou Anglais</li>
-              <li>Contenu : Doit être original et lié au thème de l'IA et l'innovation</li>
-              <li>Mise en évidence des implications pratiques de la recherche</li>
-            </ul>
-          </div>
 
           <div class="info-block">
             <h2>Prix</h2>
-            <div class="prize-section">
-              <div class="prize-card gold">
+            <div class="prize-section" style="display: flex; justify-content: center;">
+              <div class="prize-card gold" style="width: 100%; max-width: 300px;">
                 <h3>1er Prix</h3>
-                <p>Cadeau + Certificat</p>
-              </div>
-              <div class="prize-card silver">
-                <h3>2ème Prix</h3>
-                <p>Cadeau + Certificat</p>
-              </div>
-              <div class="prize-card bronze">
-                <h3>3ème Prix</h3>
                 <p>Cadeau + Certificat</p>
               </div>
             </div>
           </div>
 
-          <div class="info-block" style="text-align: center;">
-            <h2>Inscription</h2>
-            <p>Le concours est ouvert à tous les étudiants de la FSSM</p>
-            <a href="https://docs.google.com/forms/d/1B7Cdi8hRRy5aFOjaquOfImEgbmrD5VvMXelnTyVKJCc/edit" class="registration-btn">S'inscrire au concours</a>
-          </div>
+
         </div>
       </div>
     </section>
@@ -358,10 +355,10 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <h2>SEMET<span>27</span></h2>
+          <h2>LISI Days'<span>1</span></h2>
         </div>
         <div class="footer-right">
-          <p>&copy; 2025 SEMET'27. Tous droits réservés.</p>
+          <p>&copy; 2025 LISI Days'1. Tous droits réservés.</p>
         </div>
       </div>
     </div>
@@ -372,4 +369,5 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="../assets/js/script.js"></script>
 </body>
-</html> 
+
+</html>

@@ -1,0 +1,406 @@
+/* ==========================================
+   SECTION PADDING & DIVIDERS — Both Themes
+   ========================================== */
+
+/* Small extra bottom padding for all main sections */
+.about,
+.schedule,
+.speakers,
+.competitions,
+.comite,
+.contact {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.about::before,
+.schedule::before,
+.speakers::before,
+.competitions::before,
+.comite::before,
+.contact::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right,
+      transparent,
+      rgba(26, 95, 122, 0.25),
+      rgba(255, 107, 107, 0.4),
+      rgba(26, 95, 122, 0.25),
+      transparent);
+  border-radius: 2px;
+}
+
+/* ==========================================
+   THEME V2 - Light Pro Edition
+   Elegant, clean, sophisticated palette
+   Applied when body has class "theme-v2"
+   ========================================== */
+
+body.theme-v2 {
+  --primary-color: #2b4acb;
+  --secondary-color: #00b4a6;
+  --text-color: #1e2d40;
+  --light-gray: #f0f4ff;
+  --white: #ffffff;
+  background-color: #f5f7ff;
+  color: #1e2d40;
+}
+
+/* V2 divider lines - override color */
+body.theme-v2 .about::before,
+body.theme-v2 .schedule::before,
+body.theme-v2 .speakers::before,
+body.theme-v2 .competitions::before,
+body.theme-v2 .comite::before,
+body.theme-v2 .contact::before {
+  background: linear-gradient(to right,
+      transparent,
+      rgba(43, 74, 203, 0.2),
+      rgba(0, 180, 166, 0.5),
+      rgba(43, 74, 203, 0.2),
+      transparent);
+}
+
+/* ---- Header ---- */
+body.theme-v2 .header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #dde5ff;
+  box-shadow: 0 2px 16px rgba(43, 74, 203, 0.07);
+}
+
+body.theme-v2 .logo a {
+  color: #2b4acb;
+}
+
+body.theme-v2 .logo span {
+  color: #00b4a6;
+}
+
+body.theme-v2 .navbar-link {
+  color: #3d4f70;
+  font-weight: 500;
+}
+
+body.theme-v2 .navbar-link:hover {
+  color: #2b4acb;
+}
+
+body.theme-v2 .bar {
+  background-color: #2b4acb;
+}
+
+body.theme-v2 .navbar {
+  background-color: #ffffff;
+  border-left: 2px solid #dde5ff;
+}
+
+/* ---- Hero ---- */
+body.theme-v2 .hero {
+  background: linear-gradient(135deg, #eef1ff 0%, #dde5ff 40%, #e8f8f6 100%);
+}
+
+body.theme-v2 .hero-title {
+  color: #2b4acb;
+}
+
+body.theme-v2 .hero-title span {
+  color: #00b4a6;
+}
+
+body.theme-v2 .hero-subtitle {
+  color: #3d4f70;
+}
+
+body.theme-v2 .highlight {
+  color: #2b4acb;
+  font-weight: 700;
+}
+
+body.theme-v2 .hero-date,
+body.theme-v2 .hero-location {
+  color: #4a5568;
+}
+
+body.theme-v2 .hero-date ion-icon,
+body.theme-v2 .hero-location ion-icon {
+  color: #00b4a6;
+}
+
+body.theme-v2 .hero-cta {
+  background: linear-gradient(135deg, #2b4acb, #1a91ff);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(43, 74, 203, 0.3);
+}
+
+body.theme-v2 .hero-cta:hover {
+  background: linear-gradient(135deg, #00b4a6, #2b4acb);
+  box-shadow: 0 10px 28px rgba(0, 180, 166, 0.3);
+}
+
+/* ---- Section Titles ---- */
+body.theme-v2 .section-title {
+  color: #2b4acb;
+}
+
+body.theme-v2 .section-description {
+  color: #546e8a;
+}
+
+/* ---- About ---- */
+body.theme-v2 .about {
+  background: #ffffff;
+}
+
+body.theme-v2 .about-title,
+body.theme-v2 .about-subtitle {
+  color: #2b4acb;
+}
+
+body.theme-v2 .about-description {
+  color: #3d4f70;
+}
+
+body.theme-v2 .about-img {
+  border: 2px solid #dde5ff;
+  box-shadow: 0 8px 24px rgba(43, 74, 203, 0.1);
+}
+
+/* ---- Schedule ---- */
+body.theme-v2 .schedule {
+  background: #f5f7ff;
+}
+
+body.theme-v2 .schedule-day {
+  background: #ffffff;
+  border: 1px solid #dde5ff;
+  box-shadow: 0 4px 16px rgba(43, 74, 203, 0.06);
+}
+
+body.theme-v2 .schedule-day h3 {
+  color: #2b4acb;
+}
+
+body.theme-v2 .day-theme {
+  background: linear-gradient(135deg, #2b4acb, #1a91ff);
+}
+
+body.theme-v2 .schedule-item {
+  background: #f5f7ff;
+  border-left: 3px solid #2b4acb;
+}
+
+body.theme-v2 .time {
+  color: #00b4a6;
+  font-weight: 600;
+}
+
+body.theme-v2 .schedule-item h4 {
+  color: #2b4acb;
+}
+
+/* ---- Speakers/Doctorants ---- */
+body.theme-v2 .speakers {
+  background: #ffffff;
+}
+
+body.theme-v2 .speaker-card {
+  background: #ffffff;
+  border: 1px solid #dde5ff;
+  box-shadow: 0 4px 20px rgba(43, 74, 203, 0.07);
+}
+
+body.theme-v2 .speaker-card:hover {
+  border-color: #00b4a6;
+  box-shadow: 0 10px 32px rgba(0, 180, 166, 0.15);
+  transform: translateY(-6px);
+}
+
+body.theme-v2 .speaker-image-circle {
+  border: 3px solid #2b4acb;
+  box-shadow: 0 4px 12px rgba(43, 74, 203, 0.2);
+}
+
+body.theme-v2 .speaker-talk-title {
+  color: #2b4acb;
+}
+
+body.theme-v2 .speaker-name {
+  color: #00b4a6;
+}
+
+body.theme-v2 .speaker-details span {
+  color: #546e8a;
+}
+
+/* ---- Competitions ---- */
+body.theme-v2 .competitions {
+  background: #f5f7ff;
+}
+
+body.theme-v2 .competition-card {
+  background: #ffffff;
+  border: 1px solid #dde5ff;
+  color: #1e2d40;
+  box-shadow: 0 4px 16px rgba(43, 74, 203, 0.06);
+  border-radius: 14px;
+}
+
+body.theme-v2 .competition-card:hover {
+  border-color: #2b4acb;
+  box-shadow: 0 12px 32px rgba(43, 74, 203, 0.15);
+  transform: translateY(-6px);
+}
+
+body.theme-v2 .competition-icon {
+  color: #2b4acb;
+}
+
+body.theme-v2 .competition-card h3 {
+  color: #2b4acb;
+}
+
+body.theme-v2 .competition-card p {
+  color: #546e8a;
+}
+
+/* ---- Comité ---- */
+body.theme-v2 .comite {
+  background: #ffffff;
+}
+
+body.theme-v2 .comite-section {
+  background: #f5f7ff;
+  border-left: 4px solid #2b4acb;
+  border-radius: 12px;
+  padding-bottom: 20px;
+}
+
+body.theme-v2 .comite-title {
+  color: #2b4acb;
+}
+
+body.theme-v2 .comite-card {
+  background: #ffffff;
+  border: 1px solid #dde5ff;
+  box-shadow: 0 4px 14px rgba(43, 74, 203, 0.07);
+}
+
+body.theme-v2 .comite-card:hover {
+  border-color: #00b4a6;
+  box-shadow: 0 8px 24px rgba(0, 180, 166, 0.15);
+}
+
+body.theme-v2 .comite-image-circle {
+  border: 3px solid #2b4acb;
+}
+
+body.theme-v2 .comite-name {
+  color: #2b4acb !important;
+}
+
+body.theme-v2 .comite-role {
+  color: #00b4a6 !important;
+}
+
+/* ---- Contact ---- */
+body.theme-v2 .contact {
+  background: #f5f7ff;
+}
+
+body.theme-v2 .contact>.container>div {
+  background: #ffffff !important;
+  border: 1px solid #dde5ff !important;
+  box-shadow: 0 8px 30px rgba(43, 74, 203, 0.08) !important;
+}
+
+body.theme-v2 input,
+body.theme-v2 textarea {
+  background: #f5f7ff !important;
+  color: #1e2d40 !important;
+  border-color: #c7d3f5 !important;
+}
+
+body.theme-v2 input:focus,
+body.theme-v2 textarea:focus {
+  border-color: #2b4acb !important;
+  background: #ffffff !important;
+}
+
+body.theme-v2 input::placeholder,
+body.theme-v2 textarea::placeholder {
+  color: #9baed0 !important;
+}
+
+body.theme-v2 label {
+  color: #2b4acb !important;
+}
+
+body.theme-v2 button[type="submit"] {
+  background: linear-gradient(135deg, #2b4acb, #00b4a6) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 20px rgba(43, 74, 203, 0.25) !important;
+}
+
+/* ---- Footer ---- */
+body.theme-v2 .footer {
+  background: #1e2d40;
+  border-top: none;
+}
+
+body.theme-v2 .footer-logo h1 a,
+body.theme-v2 .footer-logo h2 a {
+  color: #ffffff !important;
+}
+
+body.theme-v2 .footer-logo span {
+  color: #00b4a6;
+}
+
+body.theme-v2 .footer-right p {
+  color: #90a8c0;
+}
+
+/* ---- Go Top Button ---- */
+body.theme-v2 .go-top-btn {
+  background: linear-gradient(135deg, #2b4acb, #00b4a6);
+  color: white;
+  box-shadow: 0 6px 20px rgba(43, 74, 203, 0.3);
+}
+
+/* === FLOATING THEME TOGGLE BUTTON === */
+#theme-toggle-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99999;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+  background: linear-gradient(135deg, #1a5f7a, #ff6b6b);
+  color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle-btn:hover {
+  transform: scale(1.13) rotate(18deg);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+body.theme-v2 #theme-toggle-btn {
+  background: linear-gradient(135deg, #2b4acb, #00b4a6);
+  box-shadow: 0 6px 20px rgba(43, 74, 203, 0.35);
+}
