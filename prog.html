@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JLZ805P6F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-3JLZ805P6F');
     </script>
@@ -33,6 +33,12 @@
             color: #0a5976;
             display: block;
             margin-bottom: 5px;
+        }
+
+        /* Time slots inside list items */
+        p.mb-1 strong:first-child {
+            color: #0a5976;
+            font-weight: 700;
         }
 
         @media (max-width: 768px) {
@@ -154,7 +160,8 @@
             <div class="col-12">
                 <div class="card shadow">
                     <div class="card-header bg-white">
-                        <img src="assets/images/header.png" alt="LISI Days - Edition 1" class="img-fluid mb-3" style="width: 100%; height: auto;">
+                        <img src="assets/images/header.png" alt="LISI Days - Edition 1" class="img-fluid mb-3"
+                            style="width: 100%; height: auto;">
                         <h2 class="h4 mb-0 text-center">Programme LISI Days - Edition 1</h2>
                     </div>
 
@@ -171,7 +178,9 @@
                                 <tbody>
                                     <!-- Jour 1 -->
                                     <tr class="date-row">
-                                        <td colspan="2" class="p-2"><h4>Lundi 20 Avril 2026</h4></td>
+                                        <td colspan="2" class="p-2">
+                                            <h4>Lundi 20 Avril 2026</h4>
+                                        </td>
                                     </tr>
 
                                     <tr>
@@ -181,6 +190,7 @@
                                         </td>
                                         <td class="p-3">
                                             <h6 class="mb-1">Accueil des participants</h6>
+                                            <small class="badge bg-info rounded-pill p-2">Amphi X</small>
                                         </td>
                                     </tr>
 
@@ -188,6 +198,7 @@
                                         <td class="p-3">
                                             <h5>Ouverture de la journée</h5>
                                             <span class="time-label">09h00 - 09h40</span>
+                                            <small class="badge bg-info rounded-pill p-2 mt-1">Amphi X</small>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
@@ -209,7 +220,8 @@
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Présentation du laboratoire LISI</h6>
                                                     </div>
-                                                    <p class="mb-1">Pr. EL BACHARI Essaid, Directeur du laboratoire — 09h20 - 09h40</p>
+                                                    <p class="mb-1"><strong>Pr. EL BACHARI Essaid</strong>, Directeur du
+                                                        laboratoire — 09h20 - 09h40</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -219,14 +231,36 @@
                                         <td class="p-3">
                                             <h5>Keynotes</h5>
                                             <span class="time-label">09h40 - 13h00</span>
+                                            <small class="badge bg-info rounded-pill p-2 mt-1">Amphi X</small>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h40 - 10h25</strong> Pr. Marie BONNIN — Evaluation de la protection juridique des océans à l'aide de l'IA : projet NAWRAS</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h25 - 10h45</strong> Pause-Café</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h45 - 11h35</strong> El Hassan ABDELWAHED — La transformation digitale dans l'industrie minière</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>11h35 - 12h20</strong> Pr. Jihad ZAHIR — Leveraging AI for Sustainable Marine Ecosystems</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h20 - 13h00</strong> Pr. Imad KISSAMI — Calcul parallèle et HPC: Cas du cluster Toubkal</p></div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h40 – 10h25</strong> Keynote 1 :
+                                                        <strong>Dr. Marie BONNIN</strong>, Directrice de recherche à
+                                                        l'Institut de Recherche pour le Développement (IRD) :
+                                                        &laquo;&nbsp;Evaluation de la protection juridique des océans à
+                                                        l'aide de l'IA : projet NAWRAS&nbsp;&raquo;</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h25 - 10h45</strong> Pause-Café</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h45 - 11h35</strong> Keynote 2 :
+                                                        <strong>Pr. El Hassan ABDELWAHED</strong> — La transformation
+                                                        digitale dans l'industrie minière</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h35 - 12h20</strong> Keynote 3 :
+                                                        <strong>Pr. Jihad ZAHIR</strong> — Leveraging AI for Sustainable
+                                                        Marine Ecosystems</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>12h20 – 13h00</strong> Keynote 4 :
+                                                        <strong>Pr. Imad KISSAMI</strong>, Assistant Professor at UM6P
+                                                        &laquo;&nbsp;Calcul parallèle et HPC : Cas du cluster
+                                                        Toubkal&nbsp;&raquo;</p>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -250,8 +284,11 @@
                                             <div class="list-group">
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
-                                                        <h6 class="mb-1">Workshops : Présentation des projets et des posters</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Polyvalente</small>
+                                                        <h6 class="mb-1">Workshops : Présentation des projets et des
+                                                            posters</h6>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Polyvalente</small>
                                                     </div>
                                                     <p class="mb-1">14h00 - 17h00</p>
                                                 </div>
@@ -259,17 +296,21 @@
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Session Doctorants – Salle Séminaire 1</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Séminaire 1</small>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Séminaire 1</small>
                                                     </div>
-                                                    <p class="mb-1">14h15 - 18h00</p>
+                                                    <p class="mb-1">14h00 - 18h10</p>
                                                 </div>
 
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Session Doctorants – Salle Séminaire 2</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Séminaire 2</small>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Séminaire 2</small>
                                                     </div>
-                                                    <p class="mb-1">14h15 - 18h00</p>
+                                                    <p class="mb-1">14h00 - 18h10</p>
                                                 </div>
                                             </div>
                                         </td>
@@ -277,45 +318,129 @@
 
                                     <tr>
                                         <td class="p-3">
-                                            <h5>Session Doctorants – Salle Séminaire 1</h5>
-                                            <span class="time-label">14h15 - 18h00</span>
+                                            <h5>Session 1 : Salle Séminaire 1</h5>
+                                            <span class="time-label">14h00 - 18h10</span>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>14h15 - 14h35</strong> EL FAQAR Abdessabour Chakir — Deep Learning in Material Design for Efficient Batteries</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>14h40 - 15h00</strong> M'RHAR Kaoutar — Deep learning and language models for anticancer drug design</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>15h05 - 15h25</strong> AIT MOHAMED Firdaous — Techniques d'acceleration des larges modeles</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>15h30 - 15h50</strong> KHAYOUB Ismail — LLM-Based Agents</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>16h25 - 16h45</strong> ARSALANE Moad — Artificial intelligence and agriculture</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>16h50 - 17h10</strong> MEKIANI Leila — LLM pour la conception de nouveaux médicaments : de la description de la maladie à la molécule</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>17h15 - 17h35</strong> AIT HAMMOU Najia — Application of Artificial Intelligence and Robotics in Agriculture: Integration of sensors and assembly of programmable electronic cards</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>17h40 - 18h00</strong> FADILI Aymane — Audio intelligence for local languages</p></div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h00 – 14h20</strong> EL FAQAR Abdessabour
+                                                        Chakir — Deep Learning in Material Design for Efficient
+                                                        Batteries</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h25 – 14h45</strong> M'RHAR Kaoutar — Deep
+                                                        learning and language models for anticancer drug design</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h50 – 15h10</strong> AIT MOHAMED Firdaous
+                                                        — Large Models Acceleration Techniques</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>15h15 – 15h35</strong> KHAYOUB Ismail —
+                                                        LLM-Based Agents</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>15h40 – 16h00</strong> Hafsa MATICH —
+                                                        AI-Based Structural Health Monitoring for Civil Infrastructure
+                                                        Diagnosis and Safety</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h05 – 16h25</strong> ARSALANE Moad —
+                                                        Artificial intelligence and agriculture</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h30 – 16h50</strong> MEKIANI Leila — LLM
+                                                        pour la conception de nouveaux médicaments : de la description
+                                                        de la maladie à la molécule</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h55 – 17h15</strong> AIT HAMMOU Najia —
+                                                        Application of Artificial Intelligence and Robotics in
+                                                        Agriculture: Integration of sensors and assembly of programmable
+                                                        electronic cards</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>17h20 – 17h40</strong> FADILI Aymane — Audio
+                                                        intelligence for local languages</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>17h45 – 18h05</strong> FARAH Raja —
+                                                        Identifying Influential Nodes in Complex Networks Using Machine
+                                                        Learning</p>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="p-3">
-                                            <h5>Session Doctorants – Salle Séminaire 2</h5>
-                                            <span class="time-label">14h15 - 18h00</span>
+                                            <h5>Session 1 : Salle Séminaire 2</h5>
+                                            <span class="time-label">14h00 - 18h10</span>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>14h15 - 14h35</strong> MESSAOUDI Salma — PINN-Based Digital Twin for Autonomous Vehicles with Sensor Integration and Web Platform</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>14h40 - 15h00</strong> JABIR Somaya — Apports des méthodes de reconnaissance automatique du langage pour la recherche de données pour la modélisation bioénergétique du type Dynamic Energy Budget</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>15h05 - 15h25</strong> MORAKIB Marouan — Développement d'un modèle hybride Deep Learning – RL pour le diagnostic médical et la personnalisation des traitements</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>15h30 - 15h50</strong> TARGUOAUI Mouad — Apprentissage automatique par renforcement hybridé appliqué à la classification et l'optimisation intelligente des flux énergétiques</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>16h25 - 16h45</strong> OUHMIDOU Hajar — Deep learning and machine learning to avoid congestion in vehicle networks</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>16h50 - 17h10</strong> OUBELOUAH Oumaima — AegisFlow</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>17h15 - 17h35</strong> EL HABIB Oumaima — Overview of intelligent systems for deepfake detection in social media content</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>17h40 - 18h00</strong> MALAINE Mariem — Intégration des modèles d'IA et d'otolithes DEB pour une meilleure estimation de l'âge et de la croissance des poissons</p></div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h00 – 14h20</strong> MESSAOUDI Salma —
+                                                        PINN-Based Digital Twin for Autonomous Vehicles with Sensor
+                                                        Integration and Web Platform</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h25 – 14h45</strong> RAFIQ Imane — Système
+                                                        d'intelligence artificielle pour la surveillance, la prédiction
+                                                        et l'aide à la décision utilisant l'analyse du Big Data et
+                                                        l'Internet des objets : application dans le domaine medical</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>14h50 – 15h10</strong> MORAKIB Marouan —
+                                                        Développement d'un modèle hybride Deep Learning – RL pour le
+                                                        diagnostic médical et la personnalisation des traitements</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>15h15 – 15h35</strong> TARGUOAUI Mouad —
+                                                        Apprentissage automatique par renforcement hybridé appliqué à la
+                                                        classification et l'optimisation intelligente des flux
+                                                        énergétiques</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>15h40 – 16h00</strong> RHESDAOUI Meryem —
+                                                        Communication V2X</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h05 – 16h25</strong> OUHMIDOU Hajar — Deep
+                                                        learning and machine learning to avoid congestion in vehicle
+                                                        networks</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h30 – 16h50</strong> OUBELOUAH Oumaima —
+                                                        AegisFlow</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>16h55 – 17h15</strong> EL HABIB Oumaima —
+                                                        Overview of intelligent systems for deepfake detection in social
+                                                        media content</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>17h20 – 17h40</strong> MALAINE Mariem —
+                                                        Intégration des modèles d'IA et d'otolithes DEB pour une
+                                                        meilleure estimation de l'âge et de la croissance des poissons
+                                                    </p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>17h45 – 18h05</strong> ELMANSOURI Abdelhalim
+                                                        — Sentiment analysis within the Moroccan parliamentary context,
+                                                        specifically focusing on questions directed by deputies to the
+                                                        government</p>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <!-- Jour 2 -->
                                     <tr class="date-row">
-                                        <td colspan="2" class="p-2"><h4>Mardi 21 Avril 2026</h4></td>
+                                        <td colspan="2" class="p-2">
+                                            <h4>Mardi 21 Avril 2026</h4>
+                                        </td>
                                     </tr>
 
                                     <tr>
@@ -337,8 +462,11 @@
                                             <div class="list-group">
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
-                                                        <h6 class="mb-1">Workshops : Présentation des projets et des posters</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Polyvalente</small>
+                                                        <h6 class="mb-1">Workshops : Présentation des projets et des
+                                                            posters</h6>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Polyvalente</small>
                                                     </div>
                                                     <p class="mb-1">09h00 - 13h00</p>
                                                 </div>
@@ -346,7 +474,9 @@
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Session Doctorants – Salle Séminaire 1</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Séminaire 1</small>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Séminaire 1</small>
                                                     </div>
                                                     <p class="mb-1">09h00 - 13h35</p>
                                                 </div>
@@ -354,7 +484,9 @@
                                                 <div class="list-group-item list-group-item-action">
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Session Doctorants – Salle Séminaire 2</h6>
-                                                        <small class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle Séminaire 2</small>
+                                                        <small
+                                                            class="badge bg-info rounded-pill p-2 col-12 col-sm-12 col-md-12 col-lg-4">Salle
+                                                            Séminaire 2</small>
                                                     </div>
                                                     <p class="mb-1">09h00 - 13h35</p>
                                                 </div>
@@ -364,49 +496,150 @@
 
                                     <tr>
                                         <td class="p-3">
-                                            <h5>Session Doctorants – Salle Séminaire 1</h5>
-                                            <span class="time-label">09h00 - 13h35</span>
+                                            <h5>Session 2 : Salle Séminaire 1</h5>
+                                            <span class="time-label">09h00 - 13h55</span>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h00 - 09h20</strong> FARAH Raja — Identifying Influential Nodes in Complex Networks Using Machine Learning</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h25 - 09h45</strong> CHATAOUI Nouhayla — Reinforcement Learning for Stock Market Returns Forecasting using Multi-Objective Optimization</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h50 - 10h10</strong> AITIBOUREK Lahcen — TinyML-based for agricultural IoT devices</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h15 - 10h35</strong> BOUDOUAR Youssef — Deep multimodal learning and continuous learning for fault prognosis and real-time supervision and monitoring of nuclear</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h40 - 11h00</strong> ELMAJDOUBI Mousaab — Market World Model</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>11h35 - 11h55</strong> OUASSINE Younes — Identification des coraux dans les collections d'images numériques à l'aide de modèles hybrides d'apprentissage en profondeur / ontologie / symbolique</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h00 - 12h20</strong> LHASNAOUI Chaima — Enabling Federated Learning On the Edge for Enhanced Privacy in Medical Imaging</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h25 - 12h45</strong> AL MOUATAMID Youssef — Traitement automatisé de l'information juridique pour la protection de l'environnement marin</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h50 - 13h10</strong> AIT BAALI Fatiha — Federated Fine-Tuning of Large Language Models for Domain-Specific Applications: Balancing Personalization and Privacy</p></div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h00 – 09h20</strong> CHATAOUI Nouhayla —
+                                                        Reinforcement Learning for Stock Market Returns Forecasting
+                                                        using Multi-Objective Optimization</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h25 – 09h45</strong> LHASNAOUI Chaima —
+                                                        Enabling Federated Learning On the Edge for Enhanced Privacy in
+                                                        Medical Imaging</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h50 – 10h10</strong> AIT BAALI Fatiha —
+                                                        Federated Fine-Tuning of Large Language Models for
+                                                        Domain-Specific Applications: Balancing Personalization and
+                                                        Privacy</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h15 – 10h35</strong> BOUDOUAR Youssef —
+                                                        Deep multimodal learning and continuous learning for fault
+                                                        prognosis and real-time supervision and monitoring of nuclear
+                                                    </p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h40 – 11h00</strong> ELMAJDOUBI Mousaab —
+                                                        Market World Models: Learning Causal Representations for
+                                                        Modeling and Simulating Economic and Financial Dynamics</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h05 – 11h25</strong> ATTIOUI Sanae — Les
+                                                        antennes fractales</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h30 – 11h50</strong> OUASSINE Younes —
+                                                        Identification des coraux dans les collections d'images
+                                                        numériques à l'aide de modèles hybrides d'apprentissage en
+                                                        profondeur/ontologie/symbolique</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h55 – 12h15</strong> AITIBOUREK Lahcen —
+                                                        TinyML-based for agricultural IoT devices</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>12h20 – 12h40</strong> AL MOUATAMID Youssef
+                                                        — Traitement automatisé de l'information juridique pour la
+                                                        protection de l'environnement marin</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>12h45 – 13h05</strong> EL KHARRACHI Khayya —
+                                                        Étude et proposition de modèles neuronales pour la
+                                                        reconnaissance et la classification des documents et images</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>13h10 – 13h30</strong> CHAFIA Ibtissam —
+                                                        Modeling Spatio-Temporal and Social Dynamics of Marine Animals
+                                                        with Artificial Intelligence</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>13h35 – 13h55</strong> CHETOUI Ismail —
+                                                        Graph Neural Networks for Educational Applications</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>13h55 – 14h15</strong> Hanane Moufid — Using
+                                                        IA for Cyberattack Detection and Prevention</p>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="p-3">
-                                            <h5>Session Doctorants – Salle Séminaire 2</h5>
-                                            <span class="time-label">09h00 - 13h35</span>
+                                            <h5>Session 2 : Salle Séminaire 2</h5>
+                                            <span class="time-label">09h00 - 13h55</span>
                                         </td>
                                         <td class="p-3">
                                             <div class="list-group">
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h00 - 09h20</strong> BABA Naima — SIGIRO: An information system for intelligent water resource management "a prospective dashboard for water resources": the case of the MARRAKECH-SAFI region</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h25 - 09h45</strong> RAFIQ Imane — Système d'intelligence artificielle pour la surveillance, la prédiction et l'aide à la décision utilisant l'analyse du Big Data et l'Internet des objets : application dans le domaine medical</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>09h50 - 10h10</strong> LECHHAB Hind — Vers une approche d'analyse spatio-temporelle des comportements de conduite à grande échelle basé sur l'IA</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h15 - 10h35</strong> KNIDIRI Dounia — Smart-biochar</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>10h40 - 11h00</strong> Étudiant 5 — Titre de la présentation</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>11h00 - 11h20</strong> Étudiant 6 — Titre de la présentation</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>11h35 - 11h55</strong> LAZGHAM Loubna — L'intégration du blockchain et de l'IA dans le renforcement de la cybersecurity dans les smart cities</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h00 - 12h20</strong> AIT EZOUINE Elhoussine — Traitement et indexation des vidéos à l'aide de l'IA</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h25 - 12h45</strong> ALHYANE Rachid — Combinaison de modèles d'apprentissage profond pour la classification multiclasse d'images médicales</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>12h50 - 13h10</strong> ELMANSOURI Abdelhalim — Sentiment analysis within the Moroccan parliamentary context, specifically focusing on questions directed by deputies to the government</p></div>
-                                                <div class="list-group-item list-group-item-action"><p class="mb-1"><strong>13h15 - 13h35</strong> Mohamed LAFHAM — Intelligent Tutoring System in Education 4.0</p></div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h00 – 09h20</strong> BABA Naima — SIGIRO:
+                                                        An information system for intelligent water resource management
+                                                        &ldquo;a prospective dashboard for water resources&rdquo;: the
+                                                        case of the MARRAKECH-SAFI region</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h25 – 09h45</strong> JABIR Somaya —
+                                                        Apports des méthodes de reconnaissance automatique du langage
+                                                        pour la recherche de données pour la modélisation bioénergétique
+                                                        du type Dynamic Energy Budget</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>09h50 – 10h10</strong> LECHHAB Hind — Vers
+                                                        une approche d'analyse spatio-temporelle des comportements de
+                                                        conduite à grande échelle basé sur l'IA</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h15 – 10h35</strong> KNIDIRI Dounia —
+                                                        Smart-biochar</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>10h40 – 11h00</strong> EL MESTEM Oumayma —
+                                                        Diagnostic de la fatigue et inattention</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h05 – 11h25</strong> KASSIMI M'bark —
+                                                        Avancement de l'article de revue</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h30 – 11h50</strong> LAZGHAM Loubna —
+                                                        L'intégration du blockchain et de l'IA dans le renforcement de
+                                                        la cybersecurity dans les smarts cities</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>11h55 – 12h15</strong> AIT EZOUINE
+                                                        Elhoussine — Traitement et indexation des vidéos à l'aide de
+                                                        l'IA</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>12h20 – 12h40</strong> ALHYANE Rachid —
+                                                        Combinaison de modèles d'apprentissage profond pour la
+                                                        classification multiclasse d'images médicales</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>12h45 – 13h05</strong> Mohamed LAFHAM —
+                                                        Intelligent Tutoring System in Education 4.0</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>13h10 – 13h30</strong> AOMARI Nisrine — État
+                                                        d'avancement thèse</p>
+                                                </div>
+                                                <div class="list-group-item list-group-item-action">
+                                                    <p class="mb-1"><strong>13h35 – 13h55</strong> LACHIHAB Oussama —
+                                                        Adaptive Multi-Modal Transformer Fusion for Multi-person
+                                                        Tracking Under Variable Scene Density</p>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="p-3">
-                                            <h5>Pause-Café</h5>
+                                            <h5>Pause</h5>
                                             <span class="time-label">13h35 - 14h35</span>
                                         </td>
                                         <td class="p-3">
@@ -425,7 +658,8 @@
                                                     <div class="col col-12">
                                                         <h6 class="mb-1">Clôture / Hommage / Remise des Prix</h6>
                                                     </div>
-                                                    <p class="mb-1">Clôture de l'événement, hommage et remise des prix</p>
+                                                    <p class="mb-1">Clôture de l'événement, hommage et remise des prix
+                                                    </p>
                                                 </div>
                                             </div>
                                         </td>
@@ -440,6 +674,23 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Auto-bold presenter names: text between </strong> and " — "
+        document.querySelectorAll('p.mb-1').forEach(function (p) {
+            p.innerHTML = p.innerHTML.replace(
+                /(<\/strong>)\s+([^<—–]+?)\s*(—|–)/g,
+                '$1 <strong>$2</strong> $3'
+            );
+        });
+
+        // Yellow badge for break entries
+        const pauseRegex = /(Pause-Caf[eé]|Pause d[eé]jeuner)/g;
+        const pauseBadge = '<span class="badge bg-warning text-dark rounded-pill px-2 py-1 fs-6">$1</span>';
+        document.querySelectorAll('p.mb-1, h6.mb-1, h5').forEach(function (el) {
+            el.innerHTML = el.innerHTML.replace(pauseRegex, pauseBadge);
+        });
+    </script>
 </body>
 
 </html>
